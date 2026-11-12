@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club del Té - Guía Básica</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Club del Té</h1>
+      <p>Bitácora esencial de infusión y cata</p>
+    </header>
+
+    <div class="selector-nav">
+      <button class="btn-tea activo" onclick="mostrarTe('matcha', this)">Matcha</button>
+      <button class="btn-tea" onclick="mostrarTe('earlgrey', this)">Earl Grey</button>
+      <button class="btn-tea" onclick="mostrarTe('manzanilla', this)">Manzanilla</button>
+    </div>
+
+    <div class="card" id="tarjeta-te">
+      <h2 class="card-title" id="titulo">Té Matcha</h2>
+      <p class="card-desc" id="descripcion">
+        Té verde japonés molido en fino polvo. Destaca por su color verde vibrante, sabor vegetal intenso y alta
+        concentración de antioxidantes.
+      </p>
+      <div class="specs-grid">
+        <div>
+          <div class="spec-label">Temperatura</div>
+          <div class="spec-val" id="temp">80 °C</div>
+        </div>
+        <div>
+          <div class="spec-label">Tiempo</div>
+          <div class="spec-val" id="tiempo">Batir 1 min</div>
+        </div>
+        <div>
+          <div class="spec-label">Sabor</div>
+          <div class="spec-val" id="sabor">Umami / Herbal</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Club del Té — Edición Minimalista</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
